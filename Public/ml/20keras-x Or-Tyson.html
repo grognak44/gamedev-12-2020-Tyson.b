@@ -21,11 +21,11 @@
     const yTrainingTarget = tf.tensor2d([0,1,1,0], shape=[4,1]);            // needs shape defined
                                                                                  
     var myFit = await model.fit(xTrainingData, yTrainingTarget, {
-        batchSize : 4,
-        epochs    : 10000,                                                                      
+        batchSize : 60,
+        epochs    : 30000,                                                                      
         callbacks:  { 
           onEpochEnd: async (epoch, logs) => {                                                                                         
-            document.getElementById('myDiv123').innerHTML = 'Epoch # ' + (epoch+1) + '/10000, Loss: ' + logs.loss + '<br><br>'
+            document.getElementById('myDiv123').innerHTML = 'Epoch # ' + (epoch+1) + '/30000, Loss: ' + logs.loss + '<br><br>'
             await tf.nextFrame();  // This improves UI responsiveness during training.  
           }    // end onEpochEnd callback 
         }      // end all callbacks                                                              
