@@ -1,0 +1,71 @@
+<head>
+<link rel="shortcut icon" href="danny.ico" type="image/x-icon"> 
+</head>
+<h1 align=center>Kitchen sink javascript by Tyson</h1>
+<body background = ''>
+<script>
+
+function my01(){
+ document.all.myArea01.value='wow a thing done did happen'
+}
+
+</script>
+
+<input type=text id="myText01" value="7"><br>
+<textarea id="myArea01" rows=4 cols=70>Howdy</textarea><br>
+
+<input type=button value="output and function" onclick="{
+ my01()
+}">
+
+<input type=button value="input" onclick="{
+document.all.myArea01.value = document.all.myText01>value
+}">
+
+<input type=button value="loops" onclick="{
+  document.all.myArea01.value = ''
+  for ( x = 0; x<= 10000; x++){
+     document.all.myArea01.value += x + ','
+   }
+}">
+
+
+<input type=button value="decisions" onclick="{
+  x = document.all.myText01.value
+  if (x==9){
+     document.all.myArea01.value = 'Wow a nine'
+  } else {
+    document.all.myArea01.value = 'Wow not a nine'
+  }
+}">
+<input type=button value="arrays" onclick="{
+   myMax = 6
+   myArray = new Array(myMax)
+   myArray[1] = 'Fred'
+   myArray[2] = 'Tom'
+   myArray[3] = 'Mary'
+   myArray[4] = 'Bob'
+   myArray[5] = 'Bill'
+   myArray[6] = 'Greg'
+   document.all.myArea01.value = ''
+   for ( x = 1; x <= myMax; x++){
+      document.all.myArea01.value += myArray[x] +','
+   }
+}">
+
+<input type=button value="events onmouseover" onmouseover="{
+   document.all.myArea01.value = 'you did a thing.'
+}"> 
+
+<input type=button value="Object Example" onclick="{
+ person = {
+   firstName: 'Grognak',
+   lastName: 'Kangorg',
+   age: 25,
+   eyeColor: 'red'
+}
+   document.all.myArea01.value = 'firstName:' +
+      person.firstName + ' lastName:' + person.lastName +
+      ' eyeColor:' + person.eyeColor + ' age:' + person.age
+}"> 
+</body>
