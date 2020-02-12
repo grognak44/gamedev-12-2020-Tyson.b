@@ -1,0 +1,50 @@
+<body background="blue.jfif">
+<h1 align=center> t3a05-advanced-web-Tyson </h1>
+<body onKeyDown="{
+if (event.key == 'ArrowRight') {
+      document.getElementById('gorgnak').style.left =
+      parseInt(document.getElementById('gorgnak').style.left) + 10 + 'px'
+   } 
+
+if (event.key == 'ArrowDown') {
+      document.getElementById('gorgnak').style.top =
+      parseInt(document.getElementById('gorgnak').style.top) + 10 + 'px'
+   } 
+
+if (event.key == 'ArrowLeft') {
+      document.getElementById('gorgnak').style.left =
+      parseInt(document.getElementById('gorgnak').style.left) - 10 + 'px'
+   } 
+
+
+if (event.key == 'ArrowUp') {
+      document.getElementById('gorgnak').style.top =
+      parseInt(document.getElementById('gorgnak').style.top) - 10 + 'px'
+   } 
+}">
+
+<a href="https://www.w3schools.com/html/"> HTML tutorial</a>
+
+<form name="Xeno" id="Xeno2" method="GET" action="https://www.w3schools.com/tags/tag_form.asp">
+First Name: <input type="text" value="" placeholder="First Name" required><br>
+Gender: <input type="radio" ><br>
+AC/DC: <input type="checkbox" required><br>
+Password: <input id="pass" type="password" required><br>
+Button: <input type="button" value="password" onclick="{
+alert('your password is :' + document.getElementById('pass').value)
+}"><br>
+Cat: <input type="color"><br>
+Time and Month: <input type="datetime-local" required><br>
+Number: <input type="number" value="0" min="-10" max="10"><br>
+<input type="submit" value="Forms link"><input type="reset">
+</form>
+<a href="https://www.w3schools.com/css/">CSS</a><br>
+
+this is <b>bold</b> this isn't<br>
+this is <font color="red">red</font> this is<font color="green"> green</font><br>
+<b style="background-color:blue">this has a background</b><br>
+
+<b>use the arrow keys to move the image</b><br>
+<img src="gorgnak.png" id="gorgnak"
+ style="position:absolute; width: 100px; height:100px; left:0px; top:400px; z-index:-1;">
+</body>
