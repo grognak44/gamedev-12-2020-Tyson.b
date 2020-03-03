@@ -1,0 +1,27 @@
+3<h1 align="center"> t3a10-Arrays-Tyson</h1>
+<script>
+
+let myArray = new Array(20)
+myArray[0] = 'John'
+
+</script>
+
+<input id="myText01" type=text value="fred"><Br>
+<input id="myText02" type=text value="Mary"><Br>
+<input id="myText03" type=text value="Jack"><Br>
+
+<input type="button" value="Array Set" onclick="{
+  document.getElementById('myDiv01').innerHTML = '<br>myText01 = '+document.getElementById('myText01').value
+}">
+
+<input type="button" value="Array Show" onclick="{
+  document.getElementById('myDiv01').innerHTML = myArray[0]
+}">
+
+<input type=button value="loops" onclick="{
+  document.all.myDiv01.value = ''
+  for ( x = 1; x<=  document.getElementById('myText01').value; x++){
+     document.all.myDiv01.value += x + ''
+   }
+}"><br>
+<div id="myDiv01">...</div>

@@ -1,0 +1,18 @@
+<h1 align=center>t3a11-objects-Tyson</h1>
+
+<input id="myText01" type=text value="Tyson">
+
+<input type="button" value="show object" onclick="{
+
+ myObject = {
+   'myName' : document.getElementById('myText01').value,
+   'myHairColour' : 'brown',
+   'myNumber' : '17',
+}
+
+document.getElementById('myDiv01').innerHTML = myObject.myNumber + ' name : ' + myObject.myName +
+'  hair colour ' +myObject.myHairColour
+
+}">
+
+<div id= "myDiv01">...</div>
