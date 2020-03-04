@@ -1,0 +1,16 @@
+<h1 align=center>t3a12-function-pass-Tyson</h1>
+<script>
+function myFun(myVar){
+   document.getElementById('myDiv01').innerHTML = 'Fred '+myVar
+}
+</script>
+
+Enter a salutation: <input type=text id="myText01"  value="Hello how are you">
+
+<input type="button" value="say hi" onclick="{
+
+  myFun('Hello')
+
+}"><br>
+
+<div id="myDiv01">...</div>
