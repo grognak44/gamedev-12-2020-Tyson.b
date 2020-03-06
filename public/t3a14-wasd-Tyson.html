@@ -1,0 +1,47 @@
+<h1 align=center>t3a14-wasd-Tyson</h1>
+<body onkeydown="{
+
+if (event.key == 'd') {
+      document.getElementById('thing').style.left =
+      parseInt(document.getElementById('thing').style.left) + 10 + 'px'
+   } 
+
+if (event.key == 's') {
+      document.getElementById('thing').style.top =
+      parseInt(document.getElementById('thing').style.top) + 10 + 'px'
+   } 
+
+if (event.key == 'a') {
+      document.getElementById('thing').style.left =
+      parseInt(document.getElementById('thing').style.left) - 10 + 'px'
+   } 
+
+if (event.key == 'w') {
+      document.getElementById('thing').style.top =
+      parseInt(document.getElementById('thing').style.top) - 10 + 'px'
+   } 
+
+if (event.key == 'ArrowRight') {
+      document.getElementById('thing').style.left =
+      parseInt(document.getElementById('thing').style.left) + 10 + 'px'
+   } 
+
+if (event.key == 'ArrowDown') {
+      document.getElementById('thing').style.top =
+      parseInt(document.getElementById('thing').style.top) + 10 + 'px'
+   }
+
+if (event.key == 'ArrowLeft') {
+      document.getElementById('thing').style.left =
+      parseInt(document.getElementById('thing').style.left) - 10 + 'px'
+   } 
+
+
+if (event.key == 'ArrowUp') {
+      document.getElementById('thing').style.top =
+      parseInt(document.getElementById('thing').style.top) - 10 + 'px'
+   }
+}">
+ </body>
+<img src="gorgnak.png"  id="thing"
+style="position:absolute; z-index:1; left:0px; top:0px; height:100px; width:100px;">
